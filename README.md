@@ -6,6 +6,11 @@ Assembling an assembly code
 -An assembler for the binaries
 -A linker for the executable
 
+Install the NASM via ubuntu terminal
+```
+    $ sudo apt-get -y install nasm
+```
+
 On Linux x64
 (NASM as the assembler)
 (ld for the dynamic linker)

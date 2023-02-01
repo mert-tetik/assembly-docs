@@ -1,0 +1,51 @@
+(x86)
+
+/General
+EAX: Called the Accumulator register. 
+    It is used for I/O port access, arithmetic, interrupt calls,
+    etc...
+
+EBX : Called the Base register
+    It is used as a base pointer for memory access
+    Gets some interrupt return values
+
+ECX : Called the Counter register
+    It is used as a loop counter and for shifts
+    Gets some interrupt values
+
+EDX : Called the Data register
+    It is used for I/O port access, arithmetic, some interrupt 
+    calls.
+
+/Segment 
+CS         : Holds the Code segment in which your program runs.
+             Changing its value might make the computer hang.
+
+DS         : Holds the Data segment that your program accesses.
+             Changing its value might give erronous data.
+
+ES,FS,GS   : These are extra segment registers available for
+             far pointer addressing like video memory and such.
+
+SS         : Holds the Stack segment your program uses.
+             Sometimes has the same value as DS.
+             Changing its value can give unpredictable results,
+             mostly data related.
+
+/Indexes and pointers
+ES:EDI EDI DI : Destination index register
+                Used for string, memory array copying and setting and
+                for far pointer addressing with ES
+
+DS:ESI EDI SI : Source index register
+                Used for string and memory array copying
+
+SS:EBP EBP BP : Stack Base pointer register
+                Holds the base address of the stack
+                
+SS:ESP ESP SP : Stack pointer register
+                Holds the top address of the stack
+
+CS:EIP EIP IP : Index Pointer
+                Holds the offset of the next instruction
+                It can only be read 

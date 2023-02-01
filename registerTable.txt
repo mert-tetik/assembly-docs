@@ -1,0 +1,8 @@
+
+            _______________________________________         ______________________________________
+64-bit	    RAX	        RCX	        RDX	        RBX	        RSP	        RBP	        RSI	        RDI
+32-bit		EAX		    ECX		    EDX		    EBX		    ESP		    EBP		    ESI		    EDI
+16-bit		AX		    CX		    DX		    BX		    SP		    BP		    SI		    DI
+8-bit		AH	AL	    CH	CL	    DH	DL	    BH	BL	    SPL		    BPL		    SIL		    DIL
+
+EFLAGS(x86) and RFLAGS(x64)
